@@ -19,6 +19,24 @@ const HProducts = [
       "Tasigförsamhet beteendedesign. Mobile checkout. Ylig årrtorpa.",
     image: "/product/p2.png",
   },
+  {
+    id: 3,
+    title: "Simply Orange Pulp Free Juice 52 fl oz",
+    price: "0.50",
+    currentprice: "1.99",
+    description:
+      "Tasigförsamhet beteendedesign. Mobile checkout. Ylig årrtorpa.",
+    image: "/product/p3.png",
+  },
+  {
+    id: 4,
+    title: "California Pizza Kitchen Margherita, Crispy Thin Crus…",
+    price: "0.50",
+    currentprice: "1.99",
+    description:
+      "Tasigförsamhet beteendedesign. Mobile checkout. Ylig årrtorpa.",
+    image: "/product/p4.png",
+  },
   // Add more products as needed
 ];
 
