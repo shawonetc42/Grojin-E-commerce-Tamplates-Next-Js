@@ -13,7 +13,7 @@ const Slider = () => {
       {/* Adjust margin for smaller screens */}
       <div className="mx-4 md:mx-0">
         {/* Adjust margin for smaller screens */}
-        <div className="mx-auto md:ml-56 md:mx-0">
+        <div className="mx-auto md:ml-64 md:mx-0">
           <SwiperComponent slides={slides} />
         </div>
       </div>

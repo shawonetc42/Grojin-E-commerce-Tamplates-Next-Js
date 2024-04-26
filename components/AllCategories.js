@@ -3,72 +3,70 @@ const data = [
   {
     id: 1,
     title: "All Categories",
-    image:
-      "https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F7531c16aee761a9bdd27269cacb61b583900886181994ec99951965f6092a443?width=2000&height=2000&quality=100&format=webp",
+    image: "/icons/i.klb-icon-layout-grid.svg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    id: 1,
-    title: "All Categories",
-    image:
-      "https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F7531c16aee761a9bdd27269cacb61b583900886181994ec99951965f6092a443?width=2000&height=2000&quality=100&format=webp",
+    id: 2,
+    title: "Fruits & Vegetables",
+    image: "/icons/apple.svg fill.svg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    id: 1,
-    title: "All Categories",
-    image:
-      "https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F7531c16aee761a9bdd27269cacb61b583900886181994ec99951965f6092a443?width=2000&height=2000&quality=100&format=webp",
+    id: 3,
+    title: "Meats & Seafood",
+    image: "/icons/meat.svg.svg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    id: 1,
-    title: "All Categories",
-    image:
-      "https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F7531c16aee761a9bdd27269cacb61b583900886181994ec99951965f6092a443?width=2000&height=2000&quality=100&format=webp",
+    id: 4,
+    title: "Breaksfast & Dairy",
+    image: "/icons/boiled-egg.svg.svg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    id: 1,
-    title: "All Categories",
-    image:
-      "https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F7531c16aee761a9bdd27269cacb61b583900886181994ec99951965f6092a443?width=2000&height=2000&quality=100&format=webp",
+    id: 5,
+    title: "Breads & Bakery",
+    image: "/icons/toast-bread.svg.svg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    id: 1,
-    title: "All Categories",
-    image:
-      "https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F7531c16aee761a9bdd27269cacb61b583900886181994ec99951965f6092a443?width=2000&height=2000&quality=100&format=webp",
+    id: 6,
+    title: "Beverages",
+    image: "/icons/cup.svg.svg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    id: 1,
-    title: "All Categories",
-    image:
-      "https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F7531c16aee761a9bdd27269cacb61b583900886181994ec99951965f6092a443?width=2000&height=2000&quality=100&format=webp",
+    id: 7,
+    title: "Frozen Foods",
+    image: "/icons/snowflake.svg.svg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    id: 1,
-    title: "All Categories",
-    image:
-      "https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F7531c16aee761a9bdd27269cacb61b583900886181994ec99951965f6092a443?width=2000&height=2000&quality=100&format=webp",
+    id: 8,
+    title: "Biscuits & Snacks",
+    image: "/icons/bar.svg.svg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    id: 1,
-    title: "All Categories",
-    image:
-      "https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F7531c16aee761a9bdd27269cacb61b583900886181994ec99951965f6092a443?width=2000&height=2000&quality=100&format=webp",
+    id: 9,
+    title: "Grocery & Staples",
+    image: "/icons/wheat.svg.svg",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    id: 10,
+    title: "Household Needs",
+    image: "/icons/scoop.svg.svg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
@@ -79,13 +77,13 @@ function AllCategories() {
       {data.map((item) => (
         <div
           key={item.id}
-          className="flex gap-5 justify-between items-start px-5 py-px w-full rounded-lg border-b"
+          className="flex gap-5 justify-between items-center px-5 py-px w-full rounded-lg border-b"
         >
-          <div className="flex gap-3.5 my-auto">
+          <div className="flex items-center gap-3.5 my-auto">
             <img
-              loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/7531c16aee761a9bdd27269cacb61b583900886181994ec99951965f6092a443?"
-              className="shrink-0 aspect-[1.22] w-[22px]"
+              src={item.image}
+              alt="icons"
+              className="w-5 h-5 items-center"
             />
             <div>{item.title}</div>
           </div>

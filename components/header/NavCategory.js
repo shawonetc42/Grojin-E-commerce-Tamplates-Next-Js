@@ -13,7 +13,7 @@ function NavCategory() {
           </div>
           <div className="flex gap-5  self-start">
             <div className="flex gap-2.5 items-center">
-              <nav className="ml-8 flex gap-6">
+              <nav className="ml-16 flex gap-6">
                 <a
                   href="#"
                   className="text-base font-semibold leading-10 text-gray-600 hover:text-gray-700 transition-colors duration-300 hover:underline"

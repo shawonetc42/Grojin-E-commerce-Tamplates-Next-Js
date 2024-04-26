@@ -29,6 +29,7 @@ export default function Home() {
         discriptions="Dont miss this opportunity at a special discount just for this week."
         button="Shop Now"
         link={"/shop"}
+        icon={true}
       />
       <HighlightedProducts />
       <Shop1card />
